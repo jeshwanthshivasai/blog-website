@@ -7,10 +7,10 @@ const Hero = () => {
                         <p className="mt-35 ml-20 text-2xl underline decoration-orange-500 decoration-[5px] underline-offset-45">ORESTIS GEORGIOU</p>
                     </div>
                     <div className="flex justify-end text-9xl mt-20">
-                        <ul>
-                            <li className="text-right">RESEARCHER.</li>
-                            <li className="text-right mt-5">INVENTOR.</li>
-                            <li className="text-right mt-5">AUTHOR.</li>
+                        <ul className="space-y-5 text-right font-extrabold z-1">
+                            <li>RESEARCHER.</li>
+                            <li>INVENTOR.</li>
+                            <li>AUTHOR.</li>
                         </ul>
                     </div>
                     <div>

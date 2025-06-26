@@ -1,29 +1,40 @@
 const Hero = () => {
     return (
         <>
-            <main className="bg-neutral-800 flex text-white ">
-                <div>
-                    <div className="relative inline-block ">
-                        <p className="mt-35 ml-20 text-2xl underline decoration-orange-500 decoration-[5px] underline-offset-45">ORESTIS GEORGIOU</p>
-                    </div>
-                    <div className="flex justify-end text-9xl mt-20">
-                        <ul className="space-y-5 text-right font-extrabold z-1">
-                            <li>RESEARCHER.</li>
-                            <li>INVENTOR.</li>
-                            <li>AUTHOR.</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p className="ml-20 mt-60 text-3xl text-left">Hello there, I am Hari Prasad from Telangana state, India. Completed my graduation from IIT Bombay in Electrical engineering in 2018.<br/> Currently working as R&D Engineer at Daikin Industries Ltd in Osaka, Japan.</p>
-                    </div>
+            <main className="bg-neutral-800 flex h-screen">
+                <div className="flex flex-col w-1/2 justify-center z-20 ml-12 ">
+                    <h1 className=" text-white text-2xl font-normal tracking-widest mb-6">ORESTIS GEORGIOU</h1>
+                   
+                     <div className="bg-orange-400 h-1 "></div>
+                      <h1 className="text-8xl font-bold text-white leading-tight text-right">
+                            RESEARCHER.
+                            <br />
+                            INVENTOR.
+                            <br />
+                            AUTHOR.
+                         </h1>
+
                 </div>
-                <img src="https://images.squarespace-cdn.com/content/v1/5c6fd1c7c2ff616d47ed3809/c404d93c-aa04-4838-ab6d-2af4a3b8c153/orestis-georgiou.jpg" className="h-220" />
+                   
+
+                <div className="w-1/2 z-10 absolute right-0">
+                <img src="https://images.squarespace-cdn.com/content/v1/5c6fd1c7c2ff616d47ed3809/c404d93c-aa04-4838-ab6d-2af4a3b8c153/orestis-georgiou.jpg" className="object-cover w-full " />
+                </div>
+          
             </main>
         </>
     )
 }
 
 export default Hero
+
+/* 
+DO NOT USE CHAT GPT FINAL WARNING  */
+
+
+
+
+
 
 
 // const Hero = () => {

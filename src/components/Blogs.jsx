@@ -1,8 +1,8 @@
 const Blogs = () => {
     return (
     <>
-        <main className="bg-neutral-800 flex relative">
-            <section className="my-20 ml-20">
+        <main className="bg-neutral-800 h-screen flex relative">
+            <section className="my-20 mx-3">
                 <div>
                     <h1 className="text-5xl text-white font-extrabold text-left ml-20">BLOGS</h1>
                     <div className="h-2 w-250 z-1 mt-5 ml-15 bg-orange-500"></div>

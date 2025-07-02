@@ -6,7 +6,6 @@ const Header = () => {
                 <ul className="flex space-x-30 items-center text-orange-500 mr-20 ">
                     <li><a href="#home" className="hover:text-white hover:underline-offset-2 decoration-2 decoration-white uppercase text-lg">Home</a></li>
                     <li><a href="#about" className="hover:text-white hover:underline-offset-2 decoration-2 decoration-white uppercase text-lg">About</a></li>
-                    {/* <li><a href="#publications" className="hover:text-white hover:underline-offset-2 decoration-2 decoration-white uppercase text-sm">Publications</a></li> */}
                     <li><a href="#blog" className="hover:text-white hover:underline-offset-2 decoration-2 decoration-white uppercase text-lg">Blog</a></li>
                     <li><a href="#contact" className="hover:text-white hover:underline-offset-2 decoration-2 decoration-white uppercase text-lg">Contact</a></li>
                 </ul>

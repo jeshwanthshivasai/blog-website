@@ -7,7 +7,7 @@ const Blogs = () => {
                     <h1 className="text-5xl text-white font-extrabold text-left ml-20">BLOGS</h1>
                     <div className="h-2 w-250 z-1 mt-5 ml-15 bg-orange-500"></div>
                 </div>
-                <div className="mt-15 w-6xl ml-20" >
+                <div className="mt-15 w-6xl ml-20" style={{ fontFamily: '"Anek Telugu", sans-serif' }} >
                     <p className="text-white text-2xl font-extralight font-telugu leading-loose ">
                         <span className="font-bold text-8xl">తూ</span>ర్పున తెరిచిన తలపులనుండి తళుకులొలికే తరుణుడి కిరణాల్ని తాకే
                         తరుణంలో,<br/>తళుక్కున <span className="font-bold">ఉత్తరాన</span> ఉన్న గోడ కింద తమ ఉనికిని ఉదయింప
@@ -31,8 +31,8 @@ const Blogs = () => {
                         <div className="absolute h-2 w-30 -ml-24 top-95 rotate-90 bg-orange-500"></div>
                         <div className="absolute h-2 w-80 mt-63 -ml-10 top-46 bg-orange-500"></div>
                     </div>
-                    <h2 className="font-bold text-5xl mt-23 text-white">తల్లి స్పర్శ</h2>
-                    <h3 className="text-white text-4xl font-extralight mt-15 text-right">- హరి ప్రసాద్</h3>
+                    <h2 className="font-bold text-5xl mt-23 text-white" style={{ fontFamily: '"Anek Telugu", sans-serif' }}>తల్లి స్పర్శ</h2>
+                    <h3 className="text-white text-4xl font-extralight mt-15 text-right" style={{ fontFamily: '"Anek Telugu", sans-serif' }}>- హరి ప్రసాద్</h3>
                 </div>
             </section>
         </main>

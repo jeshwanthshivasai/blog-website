@@ -1,7 +1,7 @@
 export const theme = {
     extend: {
         fontFamily: {
-            telugu: ['"Anek Telugu"', 'sans-serif'],
+            telugu: ['"Noto Sans Telugu"', 'sans-serif'],
         },
     },
 };

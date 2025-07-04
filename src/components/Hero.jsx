@@ -1,7 +1,7 @@
 const Hero = () => {
     return (
         <>
-            <main className="bg-neutral-800 flex text-white">
+            <main id="home" className="bg-neutral-800 flex text-white">
                 <div className="relative inline-block z-1">
                     <div>
                         <p className="mt-35 ml-20 text-3xl">ORESTIS GEORGIOU</p>

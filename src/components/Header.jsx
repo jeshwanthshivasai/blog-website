@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
     return (
         <>
@@ -22,20 +24,20 @@ const Header = () => {
                         </a>
                     </li>
                     <li>
-                        <a 
-                        href="#about"
+                        <Link 
+                        href="/about"
                         className="hover:text-white focus:text-white hover:underline hover:underline-offset-4 uppercase"
                         >
                             About
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a 
-                        href="#blog" 
+                        <Link 
+                        href="/blogs" 
                         className="hover:text-white focus:text-white hover:underline hover:underline-offset-4 uppercase"
                         >
                             Blog
-                        </a>
+                        </Link>
                     </li>
                     <li>
                         <a 

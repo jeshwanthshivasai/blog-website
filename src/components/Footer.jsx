@@ -1,25 +1,3 @@
-// const Footer = () => {
-//     return (
-//         <>
-//             <footer>
-//                 <div className="flex">
-//                     <ul>
-//                         <li>Home</li>
-//                         <li>About</li>
-//                         <li>Publications</li>
-//                         <li>Blog</li>
-//                         <li>Contact</li>
-//                     </ul>
-//                 </div>
-//                 &copy; Pothuraju HariPrasad All 
-//             </footer>
-//         </>
-//     )
-// }
-
-// export default Footer;
-
-
 const Footer = () => {
     return (
         <>
@@ -29,7 +7,6 @@ const Footer = () => {
                         <ul className="flex space-x-10 text-lg font-light">
                             <a><li className="hover:text-orange-500 hover:underline hover:underline-offset-4 cursor-pointer">Home</li></a>
                             <a><li className="hover:text-orange-500 hover:underline hover:underline-offset-4 cursor-pointer">About</li></a>
-                            {/* <a><li className="hover:text-orange-500 cursor-pointer">Publications</li></a> */}
                             <a><li className="hover:text-orange-500 hover:underline hover:underline-offset-4 cursor-pointer">Blog</li></a>
                             <a><li className="hover:text-orange-500 hover:underline hover:underline-offset-4 cursor-pointer">Contact</li></a>
                         </ul>

@@ -19,7 +19,7 @@ const Footer = () => {
                     </div>
                     <div>
                         <p className="text-lg text-orange-500 text-center mb-5 mt-10">
-                            &copy; {new Date().getFullYear()} <span className="text-white font-bold">Pothuraju Hari Prasad.</span> All rights reserved.
+                            &copy; {new Date().getFullYear()} <span className="text-white font-bold">Potharaju Hari Prasad.</span> All rights reserved.
                         </p>
                         <p className="text-sm text-white text-center mt-10 mb-5">
                             <span className="text-orange-500 text-lg">| </span>Designed & Developed 

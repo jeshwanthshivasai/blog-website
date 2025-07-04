@@ -1,6 +1,18 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Header = () => {
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const scrollToSection = (id) => {
+        if(location.pathname !== '/') {
+            navigate(`/#${id}`);
+        } else {
+            const el = document.getElementById(id);
+            if (el) el.scrollIntoView({behavior: "smooth"});
+        }
+    };
+
     return (
         <>
             <nav 
@@ -8,24 +20,24 @@ const Header = () => {
                 role="navigation"
                 aria-label="Main Navigation"
             >
-                <a href="#home" className="ml-10" aria-label="Go to Homepage">
+                <Link to="/" className="ml-10" aria-label="Go to Homepage">
                     <img 
                         src="https://images.squarespace-cdn.com/content/v1/5c6fd1c7c2ff616d47ed3809/1550839443584-XL6BMJZ93MCMRQX2BPGP/Orestis-Georgiou-logo-web-white.png" 
                         className="h-20 w-auto" 
                     />
-                </a>
+                </Link>
                 <ul className="flex space-x-30 items-center text-orange-500 mr-20 text-lg">
                     <li>
-                        <a 
-                        href="#home" 
+                        <Link 
+                        to="/" 
                         className="hover:text-white focus:text-white hover:underline hover:underline-offset-4 uppercase"
                         >
                             Home
-                        </a>
+                        </Link>
                     </li>
                     <li>
                         <Link 
-                        href="/about"
+                        to="/about"
                         className="hover:text-white focus:text-white hover:underline hover:underline-offset-4 uppercase"
                         >
                             About
@@ -33,7 +45,7 @@ const Header = () => {
                     </li>
                     <li>
                         <Link 
-                        href="/blogs" 
+                        to="/blogs" 
                         className="hover:text-white focus:text-white hover:underline hover:underline-offset-4 uppercase"
                         >
                             Blog
@@ -41,7 +53,16 @@ const Header = () => {
                     </li>
                     <li>
                         <a 
-                        href="#contact" 
+                        onClick={() => scrollToSection("contact")}
+                        onKeyDown={(e) => {
+                            if(e.key === "Enter" || e.key === " ") {
+                                e.preventDefault();
+                                scrollToSection("contact");
+                            }
+                        }}
+                        tabIndex={0}
+                        role="link"
+                        to="/contact" 
                         className="hover:text-white focus:text-white hover:underline hover:underline-offset-4 uppercase"
                         >
                             Contact

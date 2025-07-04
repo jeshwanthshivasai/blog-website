@@ -1,11 +1,13 @@
 import { Routes, Route } from "react-router-dom";
 
+import Hero from "./components/Hero";
+import Header from "./components/Header";
 import Biography from "./components/Biography";
 import Blogs from "./components/Blogs";
-import Footer from "./components/Footer";
 import FormFooter from "./components/FormFooter";
-import Header from "./components/Header"
-import Hero from "./components/Hero";
+import Footer from "./components/Footer";
+import ScrollToAnchor from "./components/ScrollToAnchror";
+
 import AboutPage from "./pages/AboutPage";
 import BlogPage from "./pages/BlogPage";
 
@@ -15,6 +17,7 @@ const App = () =>  {
       <Route path="/"
       element = {
       <>
+        <ScrollToAnchor/>
         <Header/>
         <Hero/>
         <Biography/>

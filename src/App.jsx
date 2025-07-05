@@ -14,11 +14,11 @@ import BlogPage from "./pages/BlogPage";
 const App = () =>  {
   return (
     <>
-    <ScrollToAnchor/>
     <Routes>
       <Route path="/"
       element = {
       <>
+        <ScrollToAnchor/>
         <Header/>
         <Hero/>
         <Biography/>

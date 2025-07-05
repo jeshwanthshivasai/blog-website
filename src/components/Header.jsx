@@ -14,12 +14,13 @@ const Header = () => {
         }   
     };
     const [isOpen, setIsOpen] = useState(false);
+    document.body.style.overflow = isOpen ? "hidden" : "auto";
     //   const navItems = ["Home", "About", "Blog", "Contact"];
 
     return (
     <>
         <nav
-        className="relative bg-neutral-800 px-6 py-6 flex justify-between items-center"
+        className="relative z-50 bg-neutral-800 px-6 py-6 flex justify-between items-center"
         role="navigation"
         aria-label="Main Navigation"
         >
@@ -79,6 +80,7 @@ const Header = () => {
                         }
                     }}
                     tabIndex={0}
+                    to="/contact"
                     role="link"
                     className="hover:text-white focus:text-white hover:underline hover:underline-offset-4 uppercase"
                 >
@@ -128,7 +130,7 @@ const Header = () => {
         </button>
 
         {/* Mobile menu */}
-        {isOpen && (
+        {/* {isOpen && (
         // <ul className="absolute top-full right-0 mt-2 w-48 bg-neutral-800 rounded-md shadow-lg py-2 flex flex-col space-y-2 text-orange-500 z-50">
         //     {navItems.map((item) => (
         //     <li key={item}>
@@ -144,6 +146,42 @@ const Header = () => {
         // </ul>
         <div>
             
+        </div>
+        )} */}
+
+        {isOpen && (
+        <div className="absolute top-full left-0 w-full h-[calc(100vh-6rem)] bg-neutral-800 z-40 flex flex-col items-center justify-center space-y-6 text-white text-lg uppercase tracking-widest">
+            {/* Menu items */}
+            <Link
+            to="/"
+            onClick={() => setIsOpen(false)}
+            className="hover:text-orange-400"
+            >
+            Home
+            </Link>
+            <Link
+            to="/about"
+            onClick={() => setIsOpen(false)}
+            className="hover:text-orange-400"
+            >
+            About
+            </Link>
+            <Link
+            to="/blogs"
+            onClick={() => setIsOpen(false)}
+            className="hover:text-orange-400"
+            >
+            Blog
+            </Link>
+            <button
+            onClick={() => {
+                setIsOpen(false);
+                scrollToSection("contact");
+            }}
+            className="hover:text-orange-400 uppercase focus:outline-none"
+            >
+            Contact
+            </button>
         </div>
         )}
         </nav>

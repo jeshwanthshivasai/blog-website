@@ -43,49 +43,49 @@ const Header = () => {
             </li>
             ))}
         </ul> */}
-        <ul className="flex space-x-30 items-center text-orange-500 mr-20 text-lg">
+
+        <ul className="hidden md:flex space-x-30 text-orange-500 mr-20 text-lg">
             <li>
-            <Link
-                to="/"
-                className="hover:text-white focus:text-white hover:underline hover:underline-offset-4 uppercase"
-            >
-                Home
-            </Link>
+                <Link 
+                    to="/" 
+                    className="hover:text-white focus:text-white hover:underline hover:underline-offset-4 uppercase"
+                >
+                    Home
+                </Link>
             </li>
             <li>
-            <Link
-                to="/about"
-                className="hover:text-white focus:text-white hover:underline hover:underline-offset-4 uppercase"
-            >
-                About
-            </Link>
+                <Link 
+                    to="/about"
+                    className="hover:text-white focus:text-white hover:underline hover:underline-offset-4 uppercase"
+                >
+                    About
+                </Link>
             </li>
             <li>
-            <Link
-                to="/blogs"
-                className="hover:text-white focus:text-white hover:underline hover:underline-offset-4 uppercase"
-            >
-                Blog
-            </Link>
+                <Link 
+                    to="/blogs" 
+                    className="hover:text-white focus:text-white hover:underline hover:underline-offset-4 uppercase"
+                >
+                    Blog
+                </Link>
             </li>
             <li>
-            <a
-                onClick={() => scrollToSection("contact")}
-                onKeyDown={(e) => {
-                if (e.key === "Enter" || e.key === " ") {
-                    e.preventDefault();
-                    scrollToSection("contact");
-                }
-                }}
-                tabIndex={0}
-                role="link"
-                to="/contact"
-                className="hover:text-white focus:text-white hover:underline hover:underline-offset-4 uppercase"
-            >
-                Contact
-            </a>
+                <a 
+                    onClick={() => scrollToSection("contact")}
+                    onKeyDown={(e) => {
+                        if(e.key === "Enter" || e.key === " ") {
+                            e.preventDefault();
+                            scrollToSection("contact");
+                        }
+                    }}
+                    tabIndex={0}
+                    role="link"
+                    className="hover:text-white focus:text-white hover:underline hover:underline-offset-4 uppercase"
+                >
+                    Contact
+                </a>
             </li>
-        </ul>
+        </ul>       
 
         {/* Burger menu button */}
         <button
@@ -129,19 +129,22 @@ const Header = () => {
 
         {/* Mobile menu */}
         {isOpen && (
-        <ul className="absolute top-full right-0 mt-2 w-48 bg-neutral-800 rounded-md shadow-lg py-2 flex flex-col space-y-2 text-orange-500 z-50">
-          {navItems.map((item) => (
-            <li key={item}>
-              <a
-                href={`#${item.toLowerCase()}`}
-                className="block px-4 py-2 uppercase hover:bg-orange-500 hover:text-white transition rounded"
-                onClick={() => setIsOpen(false)} // close on click
-              >
-                {item}
-              </a>
-            </li>
-          ))}
-        </ul>
+        // <ul className="absolute top-full right-0 mt-2 w-48 bg-neutral-800 rounded-md shadow-lg py-2 flex flex-col space-y-2 text-orange-500 z-50">
+        //     {navItems.map((item) => (
+        //     <li key={item}>
+        //         <a
+        //         href={`#${item.toLowerCase()}`}
+        //         className="block px-4 py-2 uppercase hover:bg-orange-500 hover:text-white transition rounded"
+        //         onClick={() => setIsOpen(false)} // close on click
+        //         >
+        //         {item}
+        //         </a>
+        //     </li>
+        //     ))}
+        // </ul>
+        <div>
+            
+        </div>
         )}
         </nav>
     </>

@@ -1,18 +1,8 @@
 import { useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
-    const navigate = useNavigate();
-    const location = useLocation();
-
-    const scrollToSection = (id) => { 
-        if (location.pathname !== "/") {
-            navigate(`/#${id}`);
-        } else {
-        const el = document.getElementById(id);
-        if (el) el.scrollIntoView({ behavior: "smooth" });
-        }   
-    };
     const [isOpen, setIsOpen] = useState(false);
     document.body.style.overflow = isOpen ? "hidden" : "auto";
     //   const navItems = ["Home", "About", "Blog", "Contact"];
@@ -71,21 +61,13 @@ const Header = () => {
                 </Link>
             </li>
             <li>
-                <a 
-                    onClick={() => scrollToSection("contact")}
-                    onKeyDown={(e) => {
-                        if(e.key === "Enter" || e.key === " ") {
-                            e.preventDefault();
-                            scrollToSection("contact");
-                        }
-                    }}
-                    tabIndex={0}
-                    to="/contact"
-                    role="link"
+                <HashLink
+                    smooth
+                    to="/#contact"
                     className="hover:text-white focus:text-white hover:underline hover:underline-offset-4 uppercase"
                 >
                     Contact
-                </a>
+                </HashLink>
             </li>
         </ul>       
 
@@ -173,15 +155,13 @@ const Header = () => {
             >
             Blog
             </Link>
-            <button
-            onClick={() => {
-                setIsOpen(false);
-                scrollToSection("contact");
-            }}
+            <HashLink
+            smooth
+            to="/#contact"
             className="hover:text-orange-400 uppercase focus:outline-none"
             >
             Contact
-            </button>
+            </HashLink>
         </div>
         )}
         </nav>

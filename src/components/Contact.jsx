@@ -4,7 +4,7 @@ import Form from "./Form";
 const FormFooter = () => {
     return (
         <>
-            <main className="relative min-h-screen">
+            <main id="contact" className="relative min-h-screen">
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <img 

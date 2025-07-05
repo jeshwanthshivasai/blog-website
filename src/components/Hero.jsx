@@ -24,7 +24,6 @@ const Hero = () => {
                                 I am Hari Prasad from Telangana state, India. Completed my graduation from IIT Bombay in Electrical engineering in 2018. Currently working as R&D Engineer at Daikin Industries Ltd in Osaka, Japan.
                             </p>
                         </div>
-                    </div>
 
                     {/* Right Section - Image */}
                     <div className="relative z-0 flex-1">

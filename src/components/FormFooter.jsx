@@ -3,6 +3,7 @@ import Form from "./Form";
 
 const FormFooter = () => {
     return (
+ fixed-responsive-issue
         <main className="relative min-h-screen">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
@@ -21,6 +22,7 @@ const FormFooter = () => {
                         GET IN <span className="text-neutral-800">TOUCH</span>
                     </h1>
                     <div className="h-2 w-24 sm:w-48 lg:w-72 bg-orange-500 mt-4"></div>
+        <>
                 </div>
 
                 {/* Form */}

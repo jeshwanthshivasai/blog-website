@@ -35,7 +35,7 @@ const Header = () => {
             ))}
         </ul> */}
 
-        <ul className="hidden md:flex space-x-30 text-orange-500 mr-20 text-lg">
+        <ul className="hidden md:flex space-x-14 text-orange-500 mr-10 text-lg">
             <li>
                 <Link 
                     to="/" 

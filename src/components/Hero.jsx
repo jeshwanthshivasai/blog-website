@@ -1,16 +1,16 @@
 const Hero = () => {
     return (
         <>
-            <main className="bg-neutral-800 text-white relative overflow-hidden px-4 py-10 sm:px-6 lg:px-20">
+            <main className="relative bg-neutral-800 text-white overflow-hidden px-4 py-10 sm:px-6 lg:px-20">
                 <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-10">
                     {/* Left Section */}
                     <div className="relative z-10 flex-1 space-y-10">
                         <div>
-                            <p className="text-2xl sm:text-3xl lg:text-4xl ml-2 lg:ml-0">ORESTIS GEORGIOU</p>
-                            <div className="h-1 w-32 sm:w-48 mt-4 bg-orange-500 ml-2 lg:ml-0"></div>
+                            <p className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-relaxed">HARI PRASAD</p>
+                            <div className="h-2 sm:w-7xl mt-10 bg-orange-500 ml-2 lg:ml-0"></div>
                         </div>
 
-                        <div className="text-4xl sm:text-6xl lg:text-8xl font-extrabold text-right lg:text-left">
+                        <div className="text-4xl sm:text-7xl lg:text-8xl font-extrabold text-right lg:text-left">
                             <ul className="space-y-2">
                                 <li>RESEARCHER.</li>
                                 <li>INVENTOR.</li>
@@ -26,11 +26,11 @@ const Hero = () => {
                         </div>
 
                         {/* Right Section - Image */}
-                        <div className="relative z-0 flex-1">
+                        <div className="relative -z-1 flex-1">
                             <img
-                                className="w-full h-auto object-cover rounded-lg shadow-lg"
+                                className="h-full w-full object-cover"
                                 src="https://images.squarespace-cdn.com/content/v1/5c6fd1c7c2ff616d47ed3809/c404d93c-aa04-4838-ab6d-2af4a3b8c153/orestis-georgiou.jpg"
-                                alt="Orestis Georgiou"
+                                alt="Hari Prasad"
                             />
                         </div>
                     </div>

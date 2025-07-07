@@ -14,10 +14,10 @@ const Header = () => {
         role="navigation"
         aria-label="Main Navigation"
         >
-        <Link to="/" className="ml-10" aria-label="Go to Homepage">
+        <Link to="/" aria-label="Go to Homepage">
             <img
             src="https://images.squarespace-cdn.com/content/v1/5c6fd1c7c2ff616d47ed3809/1550839443584-XL6BMJZ93MCMRQX2BPGP/Orestis-Georgiou-logo-web-white.png"
-            className="h-20 w-auto"
+            className="h-20 w-auto ml-10"
             />
         </Link>
 

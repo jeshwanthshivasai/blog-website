@@ -6,7 +6,6 @@ import Biography from "./components/Biography";
 import Blogs from "./components/Blogs";
 import FormFooter from "./components/FormFooter";
 import Footer from "./components/Footer";
-import ScrollToAnchor from "./components/ScrollToAnchror";
 
 import AboutPage from "./pages/AboutPage";
 import BlogPage from "./pages/BlogPage";
@@ -17,7 +16,6 @@ const App = () =>  {
       <Route path="/"
       element = {
       <>
-        <ScrollToAnchor/>
         <Header/>
         <Hero/>
         <Biography/>

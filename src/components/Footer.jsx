@@ -10,12 +10,6 @@ const Footer = () => {
                             <a><li className="hover:text-orange-500 hover:underline hover:underline-offset-4 cursor-pointer">Blog</li></a>
                             <a><li className="hover:text-orange-500 hover:underline hover:underline-offset-4 cursor-pointer">Contact</li></a>
                         </ul>
-                        {/* <ul className="flex space-x-10 text-lg font-light">
-                            <a><li className="hover:text-orange-500 hover:underline hover:underline-offset-4 cursor-pointer">Home</li></a>
-                            <a><li className="hover:text-orange-500 hover:underline hover:underline-offset-4 cursor-pointer">About</li></a>
-                            <a><li className="hover:text-orange-500 hover:underline hover:underline-offset-4 cursor-pointer">Blog</li></a>
-                            <a><li className="hover:text-orange-500 hover:underline hover:underline-offset-4 cursor-pointer">Contact</li></a>
-                        </ul> */}
                     </div>
                     <div>
                         <p className="text-lg text-orange-500 text-center mb-5 mt-10">

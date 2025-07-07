@@ -1,4 +1,3 @@
-import Footer from "./Footer";
 import Form from "./Form";
 
 const FormFooter = () => {

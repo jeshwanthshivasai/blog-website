@@ -34,7 +34,7 @@ const Biography = () => {
                 </div>
 
                 {/* Right - Text */}
-                <div className="w-full lg:w-1/2">
+                <div className="w-full lg:w-1/2 my-auto">
                     <h1 className="text-4xl lg:text-5xl font-extrabold text-left">BIOGRAPHY</h1>
                     <div className="h-1 w-20 bg-orange-500 mt-3 mb-6"></div>
                     <p className="text-lg lg:text-xl font-light leading-relaxed mb-6">

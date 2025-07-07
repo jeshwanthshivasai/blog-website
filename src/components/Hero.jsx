@@ -43,7 +43,7 @@
 
 const Hero = () => {
     return (
-        <main className="bg-neutral-800 text-white py-20 px-6">
+        <main className="bg-neutral-800 text-white lg:py-20 sm:py-5 px-6">
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-10">
                 {/* Left - Image */}
                 <div className="w-full lg:w-1/2">

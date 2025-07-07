@@ -5,17 +5,18 @@ const Header = () => {
     return (
         <>
             <nav 
-                className="relative bg-neutral-800 flex justify-between items-center px-6 py-6"
+                className="relative bg-neutral-800 flex justify-between items-center px-8 xl:px-12 py-6"
                 role="navigation"
                 aria-label="Main Navigation"
             >
-                <Link to="/" className="ml-10" aria-label="Go to Homepage">
+                <Link to="/" className="ml-12" aria-label="Go to Homepage">
                     <img 
                         src="https://images.squarespace-cdn.com/content/v1/5c6fd1c7c2ff616d47ed3809/1550839443584-XL6BMJZ93MCMRQX2BPGP/Orestis-Georgiou-logo-web-white.png" 
-                        className="h-20 w-auto" 
+                        alt="hari prasad logo"
+                        className="h-16 xl:h-20 w-auto" 
                     />
                 </Link>
-                <ul className="hidden md:flex space-x-30 items-center text-orange-500 mr-20 text-lg">
+                <ul className="hidden lg:flex space-x-10 xl:space-x-16 2xl:space-x-20 items-center text-orange-500 text-lg xl:text-xl">
                     <li>
                         <Link 
                         to="/" 

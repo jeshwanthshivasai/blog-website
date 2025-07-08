@@ -5,7 +5,6 @@ import { HashLink } from "react-router-hash-link";
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     document.body.style.overflow = isOpen ? "hidden" : "auto";
-    //   const navItems = ["Home", "About", "Blog", "Contact"];
 
     return (
     <>
@@ -17,23 +16,9 @@ const Header = () => {
         <Link to="/" aria-label="Go to Homepage">
             <img
             src="https://images.squarespace-cdn.com/content/v1/5c6fd1c7c2ff616d47ed3809/1550839443584-XL6BMJZ93MCMRQX2BPGP/Orestis-Georgiou-logo-web-white.png"
-            className="h-20 w-auto ml-10"
+            className="h-20 w-auto"
             />
         </Link>
-
-        {/* Desktop nav */}
-        {/* <ul className="hidden md:flex space-x-8 text-orange-500 text-lg mr-10">
-            {navItems.map((item) => (
-            <li key={item}>
-                <a
-                href={`#${item.toLowerCase()}`}
-                className="uppercase hover:text-white focus:text-white hover:underline hover:underline-offset-4 transition"
-                >
-                {item}
-                </a>
-            </li>
-            ))}
-        </ul> */}
 
         <ul className="hidden md:flex space-x-14 text-orange-500 mr-10 text-lg">
             <li>
@@ -111,56 +96,36 @@ const Header = () => {
             )}
         </button>
 
-        {/* Mobile menu */}
-        {/* {isOpen && (
-        // <ul className="absolute top-full right-0 mt-2 w-48 bg-neutral-800 rounded-md shadow-lg py-2 flex flex-col space-y-2 text-orange-500 z-50">
-        //     {navItems.map((item) => (
-        //     <li key={item}>
-        //         <a
-        //         href={`#${item.toLowerCase()}`}
-        //         className="block px-4 py-2 uppercase hover:bg-orange-500 hover:text-white transition rounded"
-        //         onClick={() => setIsOpen(false)} // close on click
-        //         >
-        //         {item}
-        //         </a>
-        //     </li>
-        //     ))}
-        // </ul>
-        <div>
-            
-        </div>
-        )} */}
-
         {isOpen && (
         <div className="absolute top-full left-0 w-full h-[calc(100vh-6rem)] bg-neutral-800 z-40 flex flex-col items-center justify-center space-y-6 text-white text-lg uppercase tracking-widest">
             {/* Menu items */}
             <Link
-            to="/"
-            onClick={() => setIsOpen(false)}
-            className="hover:text-orange-400"
+                to="/"
+                onClick={() => setIsOpen(false)}
+                className="hover:text-orange-400"
             >
-            Home
+                Home
             </Link>
             <Link
-            to="/about"
-            onClick={() => setIsOpen(false)}
-            className="hover:text-orange-400"
+                to="/about"
+                onClick={() => setIsOpen(false)}
+                className="hover:text-orange-400"
             >
-            About
+                About
             </Link>
             <Link
-            to="/blogs"
-            onClick={() => setIsOpen(false)}
-            className="hover:text-orange-400"
+                to="/blogs"
+                onClick={() => setIsOpen(false)}
+                className="hover:text-orange-400"
             >
-            Blog
+                Blog
             </Link>
             <HashLink
-            smooth
-            to="/#contact"
-            className="hover:text-orange-400 uppercase focus:outline-none"
+                smooth
+                to="/#contact"
+                className="hover:text-orange-400 uppercase focus:outline-none"
             >
-            Contact
+                Contact
             </HashLink>
         </div>
         )}

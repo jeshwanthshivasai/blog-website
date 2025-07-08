@@ -10,7 +10,7 @@ const AboutPage = () => {
                         {/* Left Text */}
                         <div className="relative z-10 w-full lg:w-1/2">
                             <div className="text-left">
-                                <h1 className="lg:text-6xl sm:text-9xl font-extrabold leading-tight mb-6 z-[-1]">ABOUT ME.</h1>
+                                <h1 className="lg:text-6xl text-5xl font-extrabold leading-tight mb-6 z-[-1]">ABOUT ME.</h1>
                                 <div className="h-2 bg-orange-500 absolute top-30 left-0 z-[-1] lg:w-xl md:w-full sm:w-full" />
                             </div>
                         </div>

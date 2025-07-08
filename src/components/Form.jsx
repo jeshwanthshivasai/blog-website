@@ -34,7 +34,7 @@ const Form = () => {
     };
     return (
         <>
-        <div className="bg-white bg-opacity-90 backdrop-blur-md lg:p-10 p-5 rounded-xl shadow-2xl w-xl min-w-2xs m-auto">
+        <div className="bg-white bg-opacity-90 backdrop-blur-md lg:p-10 p-5 rounded-xl shadow-2xl w-xl m-w-2xs m-auto">
             <form onSubmit={sendEmail} className="">
                 <div className="mb-5">
                     <label className="block mb-2 text-lg font-semibold text-neutral-800">Name</label>

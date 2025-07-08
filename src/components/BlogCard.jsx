@@ -14,7 +14,7 @@ const BlogCard = () => {
             <div className="p-6">
                 <div className="mb-5 space-y-3 flex-col" style={{ fontFamily: '"Anek Telugu", sans-serif' }}>
                     <h3 className="text-5xl text-orange-500 font-light leading-tight" >తల్లి స్పర్శ</h3>
-                    <p className="text-right text-xl font-normal text-gray-800">- హరి ప్రసాద్</p>
+                    <p className="text-right text-xl font-normal text-neutral-800">- హరి ప్రసాద్</p>
                 </div>
 
                 <hr className="my-5 border-t border-gray-300" />

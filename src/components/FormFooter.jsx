@@ -101,17 +101,17 @@ const FormFooter = () => {
 
                 {/* LEFT: SVG Illustration - only on Desktop */}
                 <div className="w-full lg:w-1/2 hidden lg:flex items-center justify-center">
-                    <div className="h-[600px] w-[600px] rounded-lg overflow-hidden shadow-xl">
+                    <div className="h-[600px] w-[600px] rounded-lg overflow-hidden">
                         <img
                             src={ContactSVG}
                             alt="Illustration"
-                            className="w-full h-full object-contain"
+                            className="w-full h-full object-contain border-8"
                         />
                     </div>
                 </div>
 
                 {/* RIGHT: Form */}
-                <div className="w-full lg:w-1/2 h-[600px] flex flex-col items-center justify-center relative">
+                <div className="w-full lg:w-1/2 h-[600px] flex flex-col items-center border-8">
 
                     {/* Only show heading on mobile */}
                     <div className="lg:hidden text-white text-4xl sm:text-5xl font-extrabold text-left leading-tight w-full h-full">

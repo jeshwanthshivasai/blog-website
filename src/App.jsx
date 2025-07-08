@@ -12,6 +12,7 @@ import BlogPage from "./pages/BlogPage";
 
 const App = () =>  {
   return (
+    <>
     <Routes>
       <Route path="/"
       element = {
@@ -28,6 +29,7 @@ const App = () =>  {
       <Route path="/about" element={<AboutPage/>} />
       <Route path="/blogs" element={<BlogPage/>} />
     </Routes>
+    </>
   )
 }
 

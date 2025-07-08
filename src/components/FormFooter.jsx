@@ -111,7 +111,7 @@ const FormFooter = () => {
                 </div>
 
                 {/* RIGHT: Form */}
-                <div className="w-full lg:w-1/2 h-[600px] flex flex-col items-center border-8">
+                <div className="w-full h-[600px] flex flex-col items-center border-8 sm:w-screen lg:w-1/2">
 
                     {/* Only show heading on mobile */}
                     <div className="lg:hidden text-white text-4xl sm:text-5xl font-extrabold text-left leading-tight w-full h-full">

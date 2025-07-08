@@ -34,8 +34,8 @@ const Form = () => {
     };
     return (
         <>
-        <div className="bg-white bg-opacity-90 backdrop-blur-md lg:p-10 p-5 rounded-xl shadow-2xl w-xl m-w-2xs m-auto">
-            <form onSubmit={sendEmail} className="">
+        {/* <div className=""> */}
+            <form onSubmit={sendEmail} className="bg-white bg-opacity-90 backdrop-blur-md lg:p-10 p-5 rounded-xl shadow-2xl max-w-2xl min-w-full m-auto">
                 <div className="mb-5">
                     <label className="block mb-2 text-lg font-semibold text-neutral-800">Name</label>
                     <input
@@ -60,7 +60,7 @@ const Form = () => {
                     <label className="block mb-2 text-lg font-semibold text-neutral-800">Message</label>
                     <textarea
                         name="message"
-                        rows="5"
+                        rows="6"
                         required
                         className="w-full px-4 py-2 border border-neutral-800 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300"
                     ></textarea>
@@ -73,7 +73,7 @@ const Form = () => {
                 />
                 {stateMessage && <p className="mt-4 text-center text-lg font-medium text-orange-500">{stateMessage}</p>}
             </form>
-        </div>
+        {/* </div> */}
         </>
     );
 };

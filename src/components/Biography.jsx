@@ -22,7 +22,7 @@
 
 const Biography = () => {
     return (
-        <main className="bg-neutral-800 text-white py-10 px-6">
+        <main className="bg-neutral-800 text-white py-10 px-6 sm:mr-3 w-full">
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-10">
                 {/* Left - Image */}
                 <div className="w-full lg:w-1/2">
@@ -36,12 +36,12 @@ const Biography = () => {
                 {/* Right - Text */}
                 <div className="w-full lg:w-1/2 my-auto">
                     <h1 className="text-4xl lg:text-5xl font-extrabold text-left">BIOGRAPHY</h1>
-                    <div className="h-1 w-20 bg-orange-500 mt-3 mb-6"></div>
+                    <div className="h-2 w-20 bg-orange-500 mt-3 mb-6"></div>
                     <p className="text-lg lg:text-xl font-light leading-relaxed mb-6">
                         Dr Orestis Georgiou is an author of 6 patents, 2 books, and 100+ academic papers that have been published in leading journals and conferences of Mathematics, Physics, Computer Science, Engineering and Medicine. He has also been co-awarded R&D grants in excess of €10 million, including a Marie Curie Individual Fellowship, and is the recipient of the prestigious 2019 IEEE Heinrich Hertz award. Finally, as Head of R&D Partnerships at Ultraleap, he is passionate about haptic technologies, networks, and spatial XR computing and oversees all our external R&D collaboration activities and grant-funded projects.
                     </p>
                     <button className="bg-orange-500 text-white font-bold py-3 px-6 rounded-full hover:bg-orange-600 transition duration-300">
-                        <a href="#">About Me</a>
+                        <a href="/about">About Me</a>
                     </button>
                 </div>
             </div>

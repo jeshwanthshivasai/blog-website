@@ -34,44 +34,46 @@ const Form = () => {
     };
     return (
         <>
-        <form onSubmit={sendEmail} className="bg-white bg-opacity-90 backdrop-blur-md p-10 rounded-xl shadow-2xl w-2xl max-w-2xl m-auto">
-            <div className="mb-5">
-                <label className="block mb-2 text-lg font-semibold text-neutral-800">Name</label>
+        <div className="bg-white bg-opacity-90 backdrop-blur-md lg:p-10 p-5 rounded-xl shadow-2xl w-xl min-w-2xs m-auto">
+            <form onSubmit={sendEmail} className="">
+                <div className="mb-5">
+                    <label className="block mb-2 text-lg font-semibold text-neutral-800">Name</label>
+                    <input
+                        type="text"
+                        name="user_name"
+                        placeholder="Your Name"
+                        required
+                        className="w-full px-4 py-2 border border-neutral-800 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300"
+                    />
+                </div>
+                <div className="mb-5">
+                    <label className="block mb-2 text-lg font-semibold text-neutral-800">Email</label>
+                    <input
+                        type="email"
+                        name="user_email"
+                        placeholder="YourName@gmail.com"
+                        required
+                        className="w-full px-4 py-2 border border-neutral-800 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300"
+                    />
+                </div>
+                <div className="mb-5">
+                    <label className="block mb-2 text-lg font-semibold text-neutral-800">Message</label>
+                    <textarea
+                        name="message"
+                        rows="5"
+                        required
+                        className="w-full px-4 py-2 border border-neutral-800 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300"
+                    ></textarea>
+                </div>
                 <input
-                    type="text"
-                    name="user_name"
-                    placeholder="Your Name"
-                    required
-                    className="w-full px-4 py-2 border border-neutral-800 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300"
+                    type="submit"
+                    value={isSubmitting ? "Sending..." : "Send"}
+                    disabled={isSubmitting}
+                    className="bg-orange-500 text-white font-bold px-6 py-2 rounded-full cursor-pointer hover:bg-orange-600 transition disabled:opacity-50"
                 />
-            </div>
-            <div className="mb-5">
-                <label className="block mb-2 text-lg font-semibold text-neutral-800">Email</label>
-                <input
-                    type="email"
-                    name="user_email"
-                    placeholder="YourName@gmail.com"
-                    required
-                    className="w-full px-4 py-2 border border-neutral-800 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300"
-                />
-            </div>
-            <div className="mb-5">
-                <label className="block mb-2 text-lg font-semibold text-neutral-800">Message</label>
-                <textarea
-                    name="message"
-                    rows="10"
-                    required
-                    className="w-full px-4 py-2 border border-neutral-800 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300"
-                ></textarea>
-            </div>
-            <input
-                type="submit"
-                value={isSubmitting ? "Sending..." : "Send"}
-                disabled={isSubmitting}
-                className="bg-orange-500 text-white font-bold px-6 py-2 rounded-full cursor-pointer hover:bg-orange-600 transition disabled:opacity-50"
-            />
-            {stateMessage && <p className="mt-4 text-center text-lg font-medium text-orange-500">{stateMessage}</p>}
-        </form>
+                {stateMessage && <p className="mt-4 text-center text-lg font-medium text-orange-500">{stateMessage}</p>}
+            </form>
+        </div>
         </>
     );
 };

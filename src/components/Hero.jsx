@@ -43,7 +43,7 @@
 
 const Hero = () => {
     return (
-        <main className="bg-neutral-800 text-white lg:py-20 sm:py-5 px-6">
+        <main className="bg-neutral-800 text-white lg:py-20 sm:py-5 px-6 sm:mr-3 w-full">
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-10">
                 {/* Left - Image */}
                 <div className="w-full lg:w-1/2">
@@ -58,19 +58,19 @@ const Hero = () => {
                 <div className="w-full lg:w-1/2 space-y-6">
                     <div>
                         <p className="text-2xl sm:text-3xl lg:text-4xl font-bold">HARI PRASAD</p>
-                        <div className="h-1 w-21 bg-orange-500 mt-6 mb-6" />
+                        <div className="h-2 w-21 bg-orange-500 mt-6 mb-6" />
                     </div>
 
                     <div className="text-4xl sm:text-6xl lg:text-7xl lg:mb-30 sm:mb-10 font-extrabold space-y-2">
                         <p>RESEARCHER.</p>
                         <p>INVENTOR.</p>
                         <p>AUTHOR.</p>
-                        <div className="h-1 lg:w-150 sm:w-50 bg-orange-500 mt-6 mb-6" />
+                        <div className="h-2 lg:w-150 sm:w-50 bg-orange-500 mt-6 mb-6" />
                     </div>
 
                     <div>
                         <p className="text-3xl sm:text-4xl text-orange-500 font-extrabold mb-3">Hello there,</p>
-                        <p className="text-lg lg:text-xl font-light leading-relaxed">
+                        <p className="text-lg lg:text-xl font-light leading-normal">
                             I am Hari Prasad from Telangana state, India. Completed my graduation from IIT Bombay in Electrical engineering in 2018. Currently working as R&D Engineer at Daikin Industries Ltd in Osaka, Japan.
                         </p>
                     </div>

@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 
 import AboutPage from "./pages/AboutPage";
 import BlogPage from "./pages/BlogPage";
+import BlogDetailPage from "./components/BlogDetailPage";
 
 const App = () =>  {
   return (
@@ -28,6 +29,7 @@ const App = () =>  {
       />
       <Route path="/about" element={<AboutPage/>} />
       <Route path="/blogs" element={<BlogPage/>} />
+      <Route path="/blogs/:slug" element={<BlogDetailPage/>} />
     </Routes>
     </>
   )

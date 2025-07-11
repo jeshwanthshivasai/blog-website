@@ -46,33 +46,36 @@
 import { Link } from "react-router-dom";
 
 const BlogCard = ({ blog }) => {
-return ( 
-        <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden">
-            <img
-            src={blog.image}
-            alt={blog.title}
-            className="w-full object-cover lg:h-120 md:h-80 sm:h-40"
-            />
-            <div className="p-6">
-                <div className="mb-5 space-y-3 flex-col" style={{ fontFamily: '"Anek Telugu", sans-serif' }}>
-                    <h3 className="text-5xl text-orange-500 font-light leading-tight">{blog.title}</h3>
-                    <p className="text-right text-xl font-normal text-neutral-800">- {blog.author}</p>
+return (
+        <>
+            <div className="bg-white text-neutral-800 rounded-xl shadow-lg overflow-hidden">
+                <img
+                src={blog.image}
+                alt={blog.title}
+                className="w-full object-cover lg:h-120 md:h-80 sm:h-40"
+                />
+                <div className="p-6">
+                    <div className="mb-5 space-y-3 flex-col">
+                        <h3 className="text-5xl text-orange-500 font-extrabold leading-tight">{blog.title}</h3>
+                        <p className="text-right text-xl font-normal text-neutral-800">- {blog.author}</p>
+                    </div>
+
+                    <hr className="my-5 border border-gray-300" />
+
+                    <p className="text-base font-normal text-neutral-800 leading-loose truncate-lines-3">
+                        {blog.excerpt}
+                    </p>
+
+                    <Link
+                        to={`/blogs/${blog.slug}`}
+                        className="mt-5 inline-block text-orange-500 text-sm font-normal hover:underline"
+                    >
+                        Read More
+                        <span className="ml-1">&rarr;</span>
+                    </Link>
                 </div>
-
-                <hr className="my-5 border-t border-gray-300" />
-
-                <p className="text-base font-light font-telugu text-gray-700 leading-loose truncate-lines-3" style={{ fontFamily: '"Anek Telugu", sans-serif' }}>
-                    {blog.excerpt}
-                </p>
-
-                <Link
-                    to={`/blogs/${blog.slug}`}
-                    className="mt-5 inline-block text-orange-500 text-sm font-medium hover:underline"
-                >
-                    Read More
-                </Link>
             </div>
-        </div>
+        </>
     );
 };
 

@@ -134,38 +134,39 @@ const BlogDetailPage = () => {
     if (!blog) return <p className="text-white">Blog not found</p>;
 
     return (
-        <main className="bg-neutral-800 text-white min-h-screen">
-            <Header />
+        <>
+            <main className="bg-neutral-800 text-white min-h-screen">
+                <Header />
 
-            <section className="max-w-5xl mx-auto px-6 py-20">
-                <h1 className="text-5xl font-bold text-orange-500 mb-4">{blog.title}</h1>
-                <p className="text-lg text-gray-400 mb-2">
-                    Published by <span className="font-medium text-white">{blog.author}</span> on{" "}
-                    <span>{blog.date}</span>
-                </p>
+                <section className="max-w-5xl mx-auto px-6 py-20">
+                    <h1 className="text-5xl font-bold text-orange-500 mb-4">{blog.title}</h1>
+                    <p className="text-lg text-gray-400 mb-2">
+                        Published by <span className="font-medium text-white">{blog.author}</span> on <span>{blog.date}</span>
+                    </p>
 
-                <img src={blog.image} alt={blog.title} className="w-full rounded-lg mt-6 mb-10" />
+                    <img src={blog.image} alt={blog.title} className="w-full rounded-lg mt-6 mb-10" />
 
-                <div className="text-lg font-light leading-loose whitespace-pre-line">
-                    {blog.content}
-                </div>
-            </section>
+                    <div className="text-lg font-light leading-loose whitespace-pre-line">
+                        {blog.content}
+                    </div>
+                </section>
 
-            {/* Recent posts */}
-            <section className="max-w-5xl mx-auto px-6 pb-20">
-                <h2 className="text-3xl font-bold mb-6">Recent Posts</h2>
-                <div className="grid md:grid-cols-3 gap-6">
-                    {blogData
-                        .filter((b) => b.slug !== slug)
-                        .slice(0, 3)
-                        .map((recentBlog) => (
-                            <RecentBlogCard key={recentBlog.slug} blog={recentBlog} />
-                        ))}
-                </div>
-            </section>
+                {/* Recent posts */}
+                <section className="max-w-5xl mx-auto px-6 pb-20">
+                    <h2 className="text-3xl font-bold mb-6">Recent Posts</h2>
+                    <div className="grid md:grid-cols-3 gap-6">
+                        {blogData
+                            .filter((b) => b.slug !== slug)
+                            .slice(0, 3)
+                            .map((recentBlog) => (
+                                <RecentBlogCard key={recentBlog.slug} blog={recentBlog} />
+                            ))}
+                    </div>
+                </section>
 
-            <Footer />
-        </main>
+                <Footer />
+            </main>
+        </>
     );
 };
 

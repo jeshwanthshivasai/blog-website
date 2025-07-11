@@ -54,6 +54,13 @@ const Header = () => {
                     Contact
                 </HashLink>
             </li>
+            <Link
+                to="*"
+                onClick={() => setIsOpen(false)}
+                className="hover:text-orange-400"
+            >
+                🤖
+            </Link>
         </ul>       
 
         {/* Burger menu button */}
@@ -127,13 +134,6 @@ const Header = () => {
             >
                 Contact
             </HashLink>
-            <Link
-                to="*"
-                onClick={() => setIsOpen(false)}
-                className="hover:text-orange-400"
-            >
-                🤖
-            </Link>
         </div>
         )}
         </nav>

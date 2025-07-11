@@ -92,7 +92,7 @@
 
 
 import Form from "./Form";
-import ContactSVG from "../assets/Get-in-touch.svg";
+import ContactPNG from "../assets/Get-in-touch.png";
 
 const FormFooter = () => {
     return (
@@ -103,7 +103,7 @@ const FormFooter = () => {
                 <div className="w-full lg:w-1/2 hidden lg:flex items-center justify-center">
                     <div className="h-[600px] w-[600px] rounded-lg overflow-hidden">
                         <img
-                            src={ContactSVG}
+                            src={ContactPNG}
                             alt="Illustration"
                             className="w-full h-full object-contain"
                         />

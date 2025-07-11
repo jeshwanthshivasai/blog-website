@@ -54,6 +54,11 @@ const Header = () => {
                     Contact
                 </HashLink>
             </li>
+            <Link
+                to="*"
+            >
+                🤖
+            </Link>
         </ul>       
 
         {/* Burger menu button */}

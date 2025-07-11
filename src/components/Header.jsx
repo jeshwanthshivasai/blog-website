@@ -56,8 +56,6 @@ const Header = () => {
             </li>
             <Link
                 to="*"
-                onClick={() => setIsOpen(false)}
-                className="hover:text-orange-400"
             >
                 🤖
             </Link>

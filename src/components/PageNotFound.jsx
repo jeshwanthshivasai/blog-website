@@ -4,10 +4,10 @@ import Error from "../assets/Oops! 404 Error with a broken robot-rafiki.png"
 const PageNotFound = () => {
     return (
         <>
-            <main className="text-center">
+            <main className="text-center h-screen w-screen bg-neutral-800">
                 <img
                     src={Error}
-                    className="h-200 w-200 mx-auto"
+                    className="lg:h-200 lg:w-200 sm: mx-auto sm:my-auto"
                 />
                 <Link
                     to="/"

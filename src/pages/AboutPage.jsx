@@ -28,7 +28,7 @@ const AboutPage = () => {
                             />
                         </div>
                     </section> */}
-                    <section className="max-w-7xl relative mx-auto flex flex-col lg:flex-row justify-between items-start lg:px-16 py-16 z-50">
+                    <section className="max-w-7xl relative mx-auto flex flex-col lg:flex-row justify-between items-start lg:px-16 py-16">
                         {/* Left Text */}
                         <div className="w-full lg:w-1/2">
                             

@@ -118,26 +118,26 @@ const Header = () => {
         </button>
 
         {isOpen && (
-        <div className="absolute top-full left-0 w-full h-[calc(100vh-6rem)] bg-neutral-800 z-40 flex flex-col items-center justify-center space-y-6 text-white hover:text-orange-500 text-lg uppercase tracking-widest">
+        <div className="absolute top-full left-0 w-full h-[calc(100vh-6rem)] bg-neutral-800 z-40 flex flex-col items-center justify-center space-y-6 text-white text-lg uppercase tracking-widest">
             {/* Menu items */}
             <Link
                 to="/"
                 onClick={() => setIsOpen(false)}
-                className="hover:text-orange-400"
+                className="hover:text-orange-500"
             >
                 Home
             </Link>
             <Link
                 to="/about"
                 onClick={() => setIsOpen(false)}
-                className="hover:text-orange-400"
+                className="hover:text-orange-500"
             >
                 About
             </Link>
             <Link
                 to="/blogs"
                 onClick={() => setIsOpen(false)}
-                className="hover:text-orange-400"
+                className="hover:text-orange-500"
             >
                 Blog
             </Link>
@@ -145,7 +145,7 @@ const Header = () => {
                 smooth
                 to="/#contact"
                 onClick={() => setIsOpen(false)}
-                className="hover:text-orange-400 uppercase focus:outline-none"
+                className="hover:text-orange-500 uppercase focus:outline-none"
             >
                 Contact
             </HashLink>

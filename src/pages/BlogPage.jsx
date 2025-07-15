@@ -144,16 +144,16 @@ const BlogPage = () => {
 
     return (
         <>
-        <main className="bg-neutral-800 text-white min-h-screen">
+        <main id="blogs" className="bg-neutral-800 text-white min-h-screen">
             <Header />
 
             {/* Blog Header Section */}
             <section className="relative max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-start px-4 sm:px-8 lg:px-16 py-16">
                 <div className="relative z-10 w-full lg:w-1/2">
                     <div className="text-left">
-                        <h1 className="lg:text-6xl font-extrabold leading-tight mb-6">BLOG.</h1>
-                        <div className="h-2 bg-orange-500 absolute top-30 left-0 z-[-1] lg:w-xl md:w-full sm:w-full" />
-                        <div className="flex items-center gap-5 mt-22">
+                        <h1 className="lg:text-6xl text-7xl font-extrabold leading-tight">BLOG.</h1>
+                        <div className="h-2 bg-orange-500 absolute top-30 left-0 z-[-1] lg:w-xl md:w-xl w-xs" />
+                        <div className="flex items-center gap-5 mt-20 lg:mt-25">
                             <div className="w-16 h-16 bg-orange-500 rounded-md flex items-center justify-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />

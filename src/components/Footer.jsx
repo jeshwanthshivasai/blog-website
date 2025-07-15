@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom"
+import { HashLink } from "react-router-hash-link";
+
 const Footer = () => {
     return (
         <>
@@ -5,10 +8,39 @@ const Footer = () => {
                 <div className="flex flex-col justify-between items-center">
                     <div className="flex space-x-20 mt-5">
                         <ul className="flex space-x-10 text-lg font-light">
-                            <a><li className="hover:text-orange-500 hover:underline hover:underline-offset-4 cursor-pointer">Home</li></a>
-                            <a><li className="hover:text-orange-500 hover:underline hover:underline-offset-4 cursor-pointer">About</li></a>
-                            <a><li className="hover:text-orange-500 hover:underline hover:underline-offset-4 cursor-pointer">Blog</li></a>
-                            <a><li className="hover:text-orange-500 hover:underline hover:underline-offset-4 cursor-pointer">Contact</li></a>
+                        <li>
+                            <Link
+                                className="hover:text-orange-500 hover:underline hover:underline-offset-4 cursor-pointer"
+                                to="/"
+                                >
+                                    Home
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className="hover:text-orange-500 hover:underline hover:underline-offset-4 cursor-pointer"
+                                to="/about"
+                                >
+                                    About
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className="hover:text-orange-500 hover:underline hover:underline-offset-4 cursor-pointer"
+                                to="/blogs"
+                                >
+                                    Blog
+                            </Link>
+                        </li>
+                        <li>
+                            <HashLink 
+                                className="hover:text-orange-500 hover:underline hover:underline-offset-4 cursor-pointer"
+                                smooth
+                                to="/#contact"
+                                >
+                                    Contact
+                            </HashLink>
+                        </li>
                         </ul>
                     </div>
                     <div>

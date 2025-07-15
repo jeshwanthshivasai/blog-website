@@ -11,11 +11,13 @@ import AboutPage from "./pages/AboutPage";
 import BlogPage from "./pages/BlogPage";
 import BlogDetailPage from "./components/BlogDetailPage";
 import PageNotFound from "./components/PageNotFound";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 const App = () =>  {
   return (
     <>
+    <ScrollToTop/>
     <Routes>
       <Route path="/"
       element = {

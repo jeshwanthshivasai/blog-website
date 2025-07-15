@@ -1,10 +1,26 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
-    document.body.style.overflow = isOpen ? "hidden" : "auto";
+    const location = useLocation();
+
+    useEffect(() => {
+        setIsOpen(false)
+    }, [location])
+
+    useEffect(() => {
+        if(isOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+        return () => {
+            document.body.style.overflow = "auto"
+        }
+    }, [isOpen])
+    // document.body.style.overflow = isOpen ? "hidden" : "auto";
 
     return (
     <>
@@ -54,11 +70,11 @@ const Header = () => {
                     Contact
                 </HashLink>
             </li>
-            <Link
+            {/* <Link
                 to="*"
             >
                 🤖
-            </Link>
+            </Link> */}
         </ul>       
 
         {/* Burger menu button */}
@@ -107,28 +123,29 @@ const Header = () => {
             <Link
                 to="/"
                 onClick={() => setIsOpen(false)}
-                className="hover:text-orange-400"
+                className="hover:text-orange-500"
             >
                 Home
             </Link>
             <Link
                 to="/about"
                 onClick={() => setIsOpen(false)}
-                className="hover:text-orange-400"
+                className="hover:text-orange-500"
             >
                 About
             </Link>
             <Link
                 to="/blogs"
                 onClick={() => setIsOpen(false)}
-                className="hover:text-orange-400"
+                className="hover:text-orange-500"
             >
                 Blog
             </Link>
             <HashLink
                 smooth
                 to="/#contact"
-                className="hover:text-orange-400 uppercase focus:outline-none"
+                onClick={() => setIsOpen(false)}
+                className="hover:text-orange-500 uppercase focus:outline-none"
             >
                 Contact
             </HashLink>
